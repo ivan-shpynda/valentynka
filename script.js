@@ -67,7 +67,6 @@ function generatePostcard() {
   magicSentence = block[sentenceNumber][0] + options[optionNumber] + block[sentenceNumber][1];
 
   if (history.includes(magicSentence)) {
-    console.log('magic sentence repeated')
     generatePostcard();
     return;
   } else {
@@ -101,7 +100,7 @@ function typeWriter() {
   if (typeWriterIndex < magicSentence.length) {
     container.innerHTML += magicSentence.charAt(typeWriterIndex);
     typeWriterIndex++;
-    setTimeout(typeWriter, 0);
+    setTimeout(typeWriter, 36);
   } else {
     typeWriterIndex = 0;
     generateNewPostCardBtn.disabled = false;
