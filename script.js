@@ -78,10 +78,10 @@ function generatePostcard() {
   
   if (counter === 15) {
     container.innerHTML = '<div class="reminder">Ще не втомилась? Відпочинь трохи: випий какаву, послухай файну музику 🙂</div>';
-    musicContainer.innerHTML = `<iframe class="responsive-iframe" src="https://www.youtube.com/embed/bj_r0-Nio38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    musicContainer.innerHTML = `<iframe class="responsive-iframe" src="https://www.youtube.com/embed/w6t2SnKJgqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
 
-  } else if (counter === 49) {
-    container.innerHTML = '<div class="reminder">Вже 50 валентинок? Це капітально. Відпочинь трохи: почитай гарну <a href="https://www.themarginalian.org/2021/06/25/jose-ortega-y-gasset-on-love/" target="_blank">історію</a>, подивися файні <a href="https://www.themarginalian.org/2022/01/16/what-is-love-carson-ellis-mac-barnett/" target="_blank">картинки</a> 🙂</div>';
+  } else if (counter === 29) {
+    container.innerHTML = '<div class="reminder">Нічого собі, вже 30 велинтинок! Це капітально. Відпочинь трохи: почитай гарну <a href="https://www.themarginalian.org/2021/06/25/jose-ortega-y-gasset-on-love/" target="_blank">історію</a>, подивися файні <a href="https://www.themarginalian.org/2022/01/16/what-is-love-carson-ellis-mac-barnett/" target="_blank">картинки</a> 🙂</div>';
   } else if (counter === 99) {
     container.innerHTML = '<div class="reminder">Ти мене дивуєш: вже 100 валентинок! Моя фантазія на межі 🙂</div>'
   } else {
