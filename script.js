@@ -67,9 +67,6 @@ function generatePostcard() {
   magicSentence = block[sentenceNumber][0] + options[optionNumber] + block[sentenceNumber][1];
 
   if (history.includes(magicSentence)) {
-    console.log('magic sentence repeated')
-    console.log(history);
-    console.log(counter);
     generatePostcard();
     return;
   } else {
@@ -79,7 +76,7 @@ function generatePostcard() {
   counter++;
   container.innerHTML = '';
   
-  if (counter === 25) {
+  if (counter === 15) {
     container.innerHTML = '<div class="reminder">Ще не втомилась? Відпочинь трохи: випий какаву, послухай файну музику 🙂</div>';
     musicContainer.innerHTML = `<iframe class="responsive-iframe" src="https://www.youtube.com/embed/bj_r0-Nio38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
 
